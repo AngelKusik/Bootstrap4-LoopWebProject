@@ -1,0 +1,60 @@
+/***** CSS Custom Styles *****/
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
+}
+
+/**Background Image**/
+#home-section {
+  background: url(../img/home.jpg);
+  background-repeat: no-repeat; /**by default the background will repeat, that's why we added this **/
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+/**Background Overlay**/
+#home-section .dark-overlay {
+  position: absolute; /**Here because we want the overley to cover the entire bg we have to make it's position absolute first and then we can positioning it as we want **/
+  top: 0; /**here we are positioning the overley to the top left corner**/
+  left: 0;
+  width: 100%;
+  height: 700px; /**we set the height the same as the parent**/
+  background-color: rgba(0,0,0,0.7); /**We are using rgba here because we want to be able to use an alpha value which is the opacity, so we are setting the first 3 values to zero to get a black color and the last one which determines the opacity to 0.7 **/
+}
+
+/**Home-Inner**/
+#home-section .home-inner {
+  padding-top: 150px;
+}
+
+/**Form Card**/
+#home-section .card-form {
+  opacity: 0.8;
+}
+
+/**Icons Home-section & Create-section**/
+#home-section .fas, #create-section .fas {
+  color: #008ed6;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/**EXPLORE SECTION**/
+
+/**Explore-section & Share-section Icons**/
+#explore-section .fas, #share-section .fas {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/**TODO: if by the end he doesn't add some padding on the side of the header elements we can add it **/
